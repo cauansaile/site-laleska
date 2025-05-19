@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #BF6565
+    --cor02: #D98484
+    --cor03: #F2BFBB
+    --cor04: #59302C
+    --cor05: #011526
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    height: 95vh;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.4)),  url(../imagens/pexels-nubikini-385976.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center ;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+}
+
+.capa{
+    height: 90%;
+    width: 100%;
+    background: url(../imagens/video_lento_.gif) no-repeat center;
+    background-size: auto;
+}
+
+.capa a{
+    position: relative;
+    top: 20px;    
+}
+
+.capa h1{
+    position: relative;
+    color: white;
+    width: 256px;
+    text-align: justify;
+    left: 20%;
+    top: 57%;
+}
