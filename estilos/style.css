@@ -1,11 +1,18 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+
 :root{
-    --cor01: #BF6565
-    --cor02: #D98484
-    --cor03: #F2BFBB
-    --cor04: #59302C
-    --cor05: #011526
+    --cor01: #BF6565;
+    --cor02: #D98484;
+    --cor03: #F2BFBB;
+    --cor04: #59302C;
+    --cor05: #011526;
+    --font01: 'Merriweather', serif;
+    --font02: 'Quicksand', sans-serif;
 }
 
 *{
@@ -16,7 +23,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font01);
 
 }
 
@@ -39,7 +46,7 @@ header a{
 .capa{
     height: 90%;
     width: 100%;
-    background: url(../imagens/video_lento_.gif) no-repeat center;
+    background: url(../image) no-repeat center;
     background-size: auto;
 }
 
@@ -56,3 +63,60 @@ header a{
     left: 20%;
     top: 57%;
 }
+
+main{
+    font-family: var(--font02);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.opcoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.opcao{
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color(0.3s);
+
+
+}
+
+.opcao:hover{
+    background-color: var(--cor05);
+
+}
+
+.img-servicos{
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border: 2px, solid, #ccc;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+    flex-shrink: 0;
+}
+
