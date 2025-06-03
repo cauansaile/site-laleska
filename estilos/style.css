@@ -28,7 +28,7 @@ body{
 }
 
 header{
-    height: 95vh;
+    height: 100vh;
     background: linear-gradient(black, rgba(0, 0, 0, 0.4)),  url(../imagens/pexels-nubikini-385976.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
@@ -55,6 +55,11 @@ header a{
     top: 20px;    
 }
 
+.capa a:hover{
+    color: var(--cor03);
+    transition-duration: 0.5s;
+}
+
 .capa h1{
     position: relative;
     color: white;
@@ -74,7 +79,71 @@ main{
     margin: 0;
 }
 
+#title{
+    color: #59302C;
+    margin-top: 15px;
+    padding: 10px;
 
+}
+.servicos{
+    margin-top: 6px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1px 1fr;
+    justify-content: center;
+    gap: 60px;
+}
+
+.divisor{
+    grid-column: 3;
+    background-color: #011526;
+    width: 0.5px;
+}
+
+.foto-mudanca{
+    
+    justify-self: center;
+}
+.servicos > .foto-mudanca img{
+    width: 400px;
+    height: 560px;
+    justify-self: center;
+}
+
+.foto-mudanca img {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+.foto-mudanca img.fade-out {
+  opacity: 0;
+}
+
+
+.servicos > .text-posi > .texto-mudanca{
+    
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 50px;
+    padding: 40px;
+
+}
+
+.texto-mudanca:hover{
+    cursor: pointer;
+    color: #D98484;
+    transition-duration: 0.5s;
+}
+
+.text-posi{
+    font-size: 1.6em;
+    margin: 0;
+}
+
+
+
+.modelos img{
+    height: 600px;
+    width: 400px;
+}
 
  section .sobre{
     margin: 85px;

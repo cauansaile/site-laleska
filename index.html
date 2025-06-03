@@ -24,20 +24,25 @@
 
     <main>
 
+        <h1 id="title">Como vou lhe deixar mais bonita hoje?</h1>
 
         <section class="servicos">
 
-            <h1>Como vou lhe deixar mais bonita hoje?</h1>
+            
 
-            <div class="foto-mudanca"><img src="imagens/dia-de-noiva.jpeg" alt="Foto de noiva"></div>
+            <div class="foto-mudanca" id="img-display"><img src="imagens/dia-de-noiva.jpeg" alt="Foto de noiva"></div>
 
-            <div class="texto-mudanca">Formaturas</div>
-
-            <div class="texto-mudanca">Dia de noiva</div>
-
-            <div class="texto-mudanca">Maquiagens</div>
-
-            <div class="texto-mudanca">Penteados</div>
+            
+                <div class="text-posi">
+                    <div class="texto-mudanca" id="idform" onmouseenter="mudarFoto('imagens/formatura.jpg')" onmouseout="tirarFoto()">Formaturas</div>
+                    <div class="texto-mudanca" id="idnoiva" onmouseenter="mudarFoto('imagens/galeria(1).jpeg')" onmouseout="tirarFoto()">Dia de noiva</div>
+                </div>
+                <div class="divisor"></div>
+                <div class="text-posi">
+                    <div class="texto-mudanca" id="idmaqui" onmouseenter="mudarFoto('imagens/maquiagem.png')" onmouseout="tirarFoto()">Maquiagens</div>
+                    <div class="texto-mudanca" idpent onmouseenter="mudarFoto('imagens/penteado.jpeg')" onmouseout="tirarFoto()">Penteados</div>
+                </div>
+            
         </section>
 
         <section class="feedbacks">
