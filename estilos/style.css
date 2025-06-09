@@ -269,33 +269,12 @@ main{
     z-index: 1; /* fica acima da faixa rosa */
 }
 
-/*.faixa-container{
-    position: relative;
-}
 
-.faixa-rosa{
-
-
-  width: 100%;
-  height: 700px;
-  background-color: var(--cor01);
-  margin-top: -350px;
-  margin-bottom: -350px;
-  z-index: 0;
-    /*position: absolute;
-    top: calc(100%-350px);
-    margin-top: -350px;
-    left: 0;
-    width: 100%;
-    height: 700px;
-    background: var(--cor01);
-    z-index: 0;
-}*/
 
 .sobre{
     
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 49vw 49vw;
     margin-top: 25px;
     margin-bottom: 25px;
     
@@ -316,3 +295,290 @@ main{
     width: 500px;
 }
 
+.form{
+    background: var(--cor01);
+    width: 99vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-item{
+    background: white;
+    width: 30vw;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+.form-item label {
+    display: block;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 1.2em;
+    color: #011526;
+}
+
+.form-item button{
+  margin-top: 40px;
+  background-color: var(--cor05);
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-item button:hover{
+    background: #010c16;
+}
+
+.form-item input,
+.form-item select{
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  header {
+    height: auto;
+    padding: 20px 0;
+    background-size: cover;
+  }
+
+  .capa {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .capa a {
+    display: block;
+    margin: 10px auto;
+    font-size: 1.1em;
+  }
+
+  .capa h1 {
+    position: static;
+    width: auto;
+    left: auto;
+    top: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+
+  .servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+  }
+
+  .servicos .foto-mudanca img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .text-posi {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .texto-mudanca {
+    padding: 15px;
+  }
+
+  .divisor {
+    display: none;
+  }
+
+  .feedbacks,
+  .modelos {
+    width: 100vw;
+    height: auto;
+  }
+
+  .carousel-wrapper {
+    height: auto;
+  }
+
+  /*.avaliacoes {
+    width: 90vw;
+    height: auto;
+  }*/
+
+
+  .feedbacks {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avaliacoes {
+  display: none;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.avaliacoes.active {
+  display: block;
+}
+
+  .avaliacoes h2 {
+    width: auto;
+    font-size: 1.5em;
+  }
+
+  .modelos img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .sobre {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .text-sobre p {
+    width: 90vw;
+  }
+
+  .form {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .form-item {
+    width: 90vw;
+  }
+}
+
+
+/*@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .capa {
+    background: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .capa a {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+
+  .capa h1 {
+    position: static;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+  main {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  #title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+  }
+
+  .foto-mudanca img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .text-posi {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .divisor {
+    display: none;
+  }
+
+  .feedbacks,
+  .modelos {
+    width: 100vw;
+    height: auto;
+  }
+
+  .carousel-wrapper {
+    height: auto;
+    padding: 10px;
+  }
+
+  .avaliacoes {
+    width: 90vw;
+    height: auto;
+  }
+
+  .modelos img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .text-sobre p {
+    width: 90vw;
+  }
+
+  .img-sobre img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .form-item {
+    width: 90vw;
+  }
+}
