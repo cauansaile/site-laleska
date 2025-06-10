@@ -77,7 +77,6 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 20px;
     margin: 0;
 }
 
@@ -292,7 +291,7 @@ main{
 }
 
 .text-sobre p {
-    width: 500px;
+    padding: 15px;
 }
 
 .form{
@@ -349,236 +348,111 @@ main{
 
 @media screen and (max-width: 768px) {
 
-  header {
-    height: auto;
-    padding: 20px 0;
-    background-size: cover;
-  }
-
-  .capa {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .capa a {
-    display: block;
-    margin: 10px auto;
-    font-size: 1.1em;
-  }
-
-  .capa h1 {
-    position: static;
-    width: auto;
-    left: auto;
-    top: auto;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.2em;
-  }
-
-  .servicos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    gap: 20px;
-  }
-
-  .servicos .foto-mudanca img {
-    width: 90vw;
-    height: auto;
-  }
-
-  .text-posi {
-    font-size: 1.2em;
-    text-align: center;
-  }
-
-  .texto-mudanca {
-    padding: 15px;
-  }
-
-  .divisor {
+  nav{
     display: none;
   }
 
-  .feedbacks,
-  .modelos {
-    width: 100vw;
-    height: auto;
-  }
-
-  .carousel-wrapper {
-    height: auto;
-  }
-
-  /*.avaliacoes {
-    width: 90vw;
-    height: auto;
-  }*/
-
-
-  .feedbacks {
-  position: relative;
-  overflow: hidden;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.avaliacoes {
-  display: none;
-  width: 100%;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.avaliacoes.active {
-  display: block;
-}
-
-  .avaliacoes h2 {
-    width: auto;
-    font-size: 1.5em;
-  }
-
-  .modelos img {
-    width: 90vw;
-    height: auto;
-  }
-
-  .sobre {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .text-sobre p {
-    width: 90vw;
-  }
-
-  .form {
-    flex-direction: column;
-    height: auto;
-    padding: 20px 0;
-  }
-
-  .form-item {
-    width: 90vw;
-  }
-}
-
-
-/*@media screen and (max-width: 768px) {
-  header {
-    height: auto;
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .capa {
-    background: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  .capa a {
-    display: block;
-    margin: 10px 0;
-    font-size: 1.2em;
-  }
-
-  .capa h1 {
-    position: static;
-    width: auto;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.4em;
-  }
-
-  main {
-    gap: 20px;
-    padding: 10px;
-  }
-
-  #title {
-    font-size: 1.5em;
-    text-align: center;
-  }
-
   .servicos {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
-    gap: 20px;
+    padding: 20px;
+    gap: 30px;
   }
 
   .foto-mudanca img {
     width: 90vw;
     height: auto;
-  }
-
-  .text-posi {
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    max-width: 400px;
   }
 
   .divisor {
     display: none;
   }
 
-  .feedbacks,
-  .modelos {
+  .text-posi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    justify-items: center;
+  }
+
+  .texto-mudanca {
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .feedbacks {
     width: 100vw;
     height: auto;
   }
 
   .carousel-wrapper {
-    height: auto;
-    padding: 10px;
+    height: 500px;
+    overflow: hidden;
+    width: 100vw;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: max-content;
   }
 
   .avaliacoes {
-    width: 90vw;
-    height: auto;
+    min-width: 85vw;
+    max-width: 85vw;
+    height: 50vh;
+    box-sizing: border-box;
+    padding: 20px;
   }
 
-  .modelos img {
-    width: 90vw;
-    height: auto;
+  .arrow {
+    top: unset;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background-color: var(--cor03);
+    color: #fff;
   }
 
-  .sobre {
+  .modelos{
+    width: 98vw;
+    height: auto;
+    gap: 10px;
+  }
+
+  .img-models{
+    min-width: 85vw;
+    max-width: 85vw;
+    height: 50vh;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .sobre{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 35px;
   }
 
-  .text-sobre p {
+  .sobre > .text-sobre{
     width: 90vw;
+    text-align: justify;
+    height: 50vh;
+
   }
 
-  .img-sobre img {
+
+
+  .form-item{
     width: 80vw;
-    height: auto;
   }
 
-  .form {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 20px 0;
-  }
 
-  .form-item {
-    width: 90vw;
-  }
+
 }
+
