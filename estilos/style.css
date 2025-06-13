@@ -356,6 +356,11 @@ main{
     display: none;
   }
 
+  .capa{
+    width: 90vw;
+    background-size: cover;
+  }
+
   .servicos {
     display: flex;
     flex-direction: column;
@@ -447,6 +452,7 @@ main{
     flex-direction: column;
     align-items: center;
     margin-bottom: 35px;
+    gap: 90px;
   }
 
   .sobre > .text-sobre{
@@ -456,8 +462,11 @@ main{
 
   }
 
+  
 
-
+  .form{
+    width: 98vw;
+  }
   .form-item{
     width: 80vw;
   }
